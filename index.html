@@ -1,30 +1,76 @@
 <!DOCTYPE html>
-<html lang="pt_BR">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/style/main.css">
-    <title>Página Inicial</title>
-    <link rel="stylesheet" href="/style/main.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página Inicial</title>
+  <link rel="stylesheet" href="/style/main.css">
+  <link rel="shortcut icon" href="assets/images/heart.svg" type="image/x-icon">
 </head>
 <body>
-    <div class="container">
-        <div class="header">
-            <div class="btn-group">
-                <a href="pages/historia.html" class="btn"> 1 </a>
-                <a href="pages/galeria.html" class="btn"> 2 </a>
-                <a href="pages/carta.html" class="btn"> 3 </a>
-            </div>
+  <div class="container">
+
+    <header class="cabecalho">
+      <h1>TÍTULO</h1>
+      <h2>Subtítulo</h2>
+    </header>
+
+    <nav class="btn-group">
+        <a href="pages/historia.html" class="btn">
+            <img src="assets/images/historia.svg" alt="História" class="btn-img">
+        </a>
+        <a href="pages/galeria.html" class="btn">
+            <img src="assets/images/galeria.svg" alt="Galeria" class="btn-img">
+        </a>
+        <a href="pages/carta.html" class="btn">
+            <img src="assets/images/carta.svg" alt="Carta" class="btn-img">
+        </a>
+        <a href="pages/planos.html" class="btn">
+            <img src="assets/images/aviao.svg" alt="Carta" class="btn-img">
+        </a>
+    </nav>
+
+    <main class="corpo">
+      <h3>Tópico</h3>
+      <div class="colunas">
+        <div class="coluna1">
+          <p>um pouco de texto</p>
         </div>
-        <div class="colunas"> 
-            <div class="coluna1"></div>
-            <div class="coluna2"></div>
+        <div class="coluna2">
+          <p>um pouco de texto</p>
         </div>
-        <div class="frase">
-            Teste 
+      </div>
+
+      <div class="frase">
+        <p>"Frase"</p>
+      </div>
+
+
+      <div class="slider">
+        <input type="radio" id="slide1" name="slide" checked>
+        <input type="radio" id="slide2" name="slide">
+        <input type="radio" id="slide3" name="slide">
+
+        <div class="slides">
+          <img src="assets/images/heart.svg" alt="Slide 1">
+          <img src="assets/images/heart.svg" alt="Slide 2">
+          <img src="assets/images/heart.svg" alt="Slide 3">
         </div>
-    </div>
+
+        <div class="nav">
+          <label for="slide1"></label>
+          <label for="slide2"></label>
+          <label for="slide3"></label>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+        <div class="rodape">
+            <h4>© Feito por Gabs</h4>
+        </div>
+    </footer>
+
+  </div>
 </body>
 </html>
-
-

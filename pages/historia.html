@@ -3,10 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carta</title>
+    <title>Document</title>
     <link rel="stylesheet" href="/style/main.css">
 </head>
 <body>
-    <button onclick="history.back()" class="btn-voltar">← Voltar</button>
+    
+    <div class="container">
+        
+        <header class="cabecalho">
+          <button onclick="history.back()" class="btn-voltar">← Voltar</button>
+          <h1>TÍTULO</h1>
+          <h2>Subtítulo</h2>
+        </header>
+    
+        <main class="corpo">
+          <h3> Tópico </h3>
+          <div class="colunas">
+            <div class="coluna1">
+              <p>um pouco de texto</p>
+            </div>
+          </div>
+    
+          <div class="frase">
+            <p>"Frase"</p>
+          </div>
+
+          <!-- Carrossel -->
+          <div class="carousel-container">
+            <div class="carousel">
+              <div class="carousel-item active">
+                <img src="/assets/images/galeria.svg" alt="Imagem 1">
+                <div class="carousel-caption">
+                  <h2>Texto para Imagem 1</h2>
+                  <p>Descrição da imagem 1</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="/assets/images/heart.svg" alt="Imagem 2">
+                <div class="carousel-caption">
+                  <h2>Texto para Imagem 2</h2>
+                  <p>Descrição da imagem 2</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="/assets/images/historia.svg" alt="Imagem 3">
+                <div class="carousel-caption">
+                  <h2>Texto para Imagem 3</h2>
+                  <p>Descrição da imagem 3</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Botões de navegação -->
+            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+            <button class="next" onclick="moveSlide(1)">&#10095;</button>
+          </div>
+          
+        </main>
+    
+        <footer>
+            <div class="rodape">
+                <h4>© Feito por Gabs</h4>
+            </div>
+        </footer>
+    
+    </div>
+    <script src="/scripts/main.js"></script>
 </body>
 </html>
